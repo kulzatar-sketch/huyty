@@ -9,7 +9,7 @@ body {
 
 @keyframes moveBackground {
     0% { background-position: 0 0; }
-    100% { background-position: 1000px 1000px; } /* Increased for more noticeable effect */
+    100% { background-position: 10px 10px; } /* Increased for more noticeable effect */
 }
 
 .container {
@@ -53,5 +53,6 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 
 
