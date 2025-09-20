@@ -3,13 +3,13 @@ body {
     height: 100vh;
     overflow: hidden;
     background: url('https://i.imgur.com/9T02euI.jpg') repeat; /* Use direct image URL */
-    background-size: cover; /* Adjust based on desired effect */
+    background-size: 200px 200px; /* Adjust based on desired effect */
     animation: moveBackground 10s linear infinite;
 }
 
 @keyframes moveBackground {
     0% { background-position: 0 0; }
-    100% { background-position: 10px 10px; } /* Increased for more noticeable effect */
+    100% { background-position: 200px 200px; } /* Increased for more noticeable effect */
 }
 
 .container {
@@ -53,6 +53,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 
 
 
