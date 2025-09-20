@@ -1,58 +1,55 @@
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    /* Relaxing eye-friendly background color */
-    background-color: #B2DFDB; /* Light teal for eye relaxation */
-    color: #333333; /* Darker text for contrast on light background */
+    height: 100vh;
     overflow: hidden;
+    background: url('https://imgur.com/9T02euI') repeat; /* Replace with your image path */
+    background-size: cover;
+    animation: moveBackground 10s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100px 100px; }
 }
 
 .container {
+    position: relative;
     text-align: center;
-    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white for readability */
     padding: 20px;
-    border-radius: 5px;
-    max-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    color: white;
+    z-index: 1;
+    text-shadow: 2px 2px 4px #000;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 10px;
-    color: #333333;
 }
 
 p {
-    font-size: 1em;
-    margin: 10px 0;
-}
-
-a {
-    text-decoration: none;
-    color: #00695C; /* Darker teal for links, matching the relaxing theme */
+    font-size: 1.2em;
+    margin: 5px 0;
 }
 
 button {
-    background-color: #00695C; /* Dark teal button */
-    color: #fff;
-    border: none;
     padding: 10px 20px;
     font-size: 1em;
+    background-color: #00ff00;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 3px;
-    margin: 5px;
+    color: black;
 }
 
 button:hover {
-    background-color: #004D40; /* Slightly darker on hover */
+    background-color: #00cc00;
 }
 
-@media (max-width: 480px) {
-    .container { padding: 15px; max-width: 300px; }
-    h1 { font-size: 1.5em; }
-    button { font-size: 0.9em; padding: 8px 15px; }
+a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
