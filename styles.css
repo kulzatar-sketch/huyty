@@ -2,7 +2,7 @@ body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
-    background: url('https://imgur.com/9T02euI') repeat; /* Replace with your image path */
+    background: https://imgur.com/9T02euI repeat; /* Replace with your image path */
     background-size: cover;
     animation: moveBackground 10s linear infinite;
 }
@@ -53,3 +53,4 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
