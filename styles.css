@@ -2,21 +2,21 @@ body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
-    background: https://imgur.com/9T02euI repeat; /* Replace with your image path */
-    background-size: cover;
+    background: url('https://i.imgur.com/9T02euI.jpg') repeat; /* Use direct image URL */
+    background-size: cover; /* Adjust based on desired effect */
     animation: moveBackground 10s linear infinite;
 }
 
 @keyframes moveBackground {
     0% { background-position: 0 0; }
-    100% { background-position: 100px 100px; }
+    100% { background-position: 200px 200px; } /* Increased for more noticeable effect */
 }
 
 .container {
     position: relative;
     text-align: center;
     padding: 20px;
-    color: white;
+    color: white; /* Explicitly set color */
     z-index: 1;
     text-shadow: 2px 2px 4px #000;
 }
@@ -53,4 +53,3 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
