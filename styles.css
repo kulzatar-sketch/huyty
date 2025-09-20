@@ -54,6 +54,20 @@ a:hover {
     text-decoration: underline;
 }
 
+<div class="neanderthal">
+  <img src="neanderthal-jumping.png" alt="Neanderthal Jumping">
+</div>
+
+<style>
+  .neanderthal {
+    animation: jump 2s infinite;
+  }
+  @keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+</style>
 
 
 
