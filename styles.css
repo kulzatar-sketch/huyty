@@ -69,6 +69,20 @@ a:hover {
   }
 </style>
 
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 600px 600px; } /* Match background-size for seamless tiling */
+}
+
+.neanderthal {
+    position: absolute;
+    bottom: 20px; /* Position at the bottom of the page */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    animation: jump 2s infinite;
+}
+
+
 
 
 
